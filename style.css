@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: #000;
+  --btn-color: #daa520;
+}
+
+body {
+  background-image: url(./game.PNG);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1em 0;
+}
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28%;
+  height: 34%;
+  flex-wrap: wrap;
+  float: left;
+  border: 5px solid var(--black-color);
+  text-align: center;
+  font-size: 5rem;
+}
+
+.control-inputs {
+  text-align: center;
+  margin: 1.2em 0;
+  padding: 1em 0;
+  background-color: var(--black-color);
+  color: white;
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+input {
+  padding: 1em 0.5em;
+}
+
+button {
+  padding: 1em 0.5em;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: var(--btn-color);
+}
