@@ -55,9 +55,14 @@ const StartGame = (() => {
 
   const startingGame = () => {
     players = [
-      createPlayer(document.querySelector(".player1").value, "X"),
-      createPlayer(document.querySelector(".player2").value, "O"),
+      createPlayer(document.getElementById("player1").value, "X"),
+      createPlayer(document.getElementById("player2").value, "O"),
     ];
+
+    if (!players) {
+      console.log("add players name");
+    }
+
     currentPlayerIndex = 0;
     gameOver = false;
     GameBoard.renderGame();
