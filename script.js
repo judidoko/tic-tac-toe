@@ -59,10 +59,6 @@ const StartGame = (() => {
       createPlayer(document.getElementById("player2").value, "O"),
     ];
 
-    if (!players) {
-      console.log("add players name");
-    }
-
     currentPlayerIndex = 0;
     gameOver = false;
     GameBoard.renderGame();
